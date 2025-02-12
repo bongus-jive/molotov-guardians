@@ -1,92 +1,17 @@
 [
   {
-    "op" : "replace",
-    "path" : "/list/1/body/0/type",
-    "value" : "molotov"
-  },
-  {
-    "op" : "replace",
-    "path" : "/list/1/body/0/config/actionOnReap",
-    "value" : [
-      {
-        "action" : "item",
-        "name" : "essence",
-        "count" : 25
-      },
-      {
-        "action" : "config",
-        "file" : "/projectiles/explosions/molotovexplosion/molotovexplosion.config"
-      },
-      {
-        "action" : "projectile",
-        "type" : "molotovflame",
-        "fuzzAngle" : 0,
-        "inheritDamageFactor" : 0.05,
-        "angleAdjust" : 35
-      },
-      {
-        "action" : "projectile",
-        "type" : "molotovflame",
-        "fuzzAngle" : 0,
-        "inheritDamageFactor" : 0.05,
-        "angleAdjust" : -35
-      },
-      {
-        "action" : "projectile",
-        "type" : "molotovflame",
-        "fuzzAngle" : 0,
-        "inheritDamageFactor" : 0.05,
-        "angleAdjust" : 1
-      },
-      {
-        "action" : "projectile",
-        "type" : "molotovflame",
-        "fuzzAngle" : 0,
-        "inheritDamageFactor" : 0.05,
-        "angleAdjust" : -18
-      },
-      {
-        "action" : "projectile",
-        "type" : "molotovflame",
-        "fuzzAngle" : 0,
-        "inheritDamageFactor" : 0.05,
-        "angleAdjust" : 18
-      },
-      {
-        "action" : "projectile",
-        "type" : "molotovflame",
-        "fuzzAngle" : 0,
-        "inheritDamageFactor" : 0.05,
-        "angleAdjust" : 55
-      },
-      {
-        "action" : "projectile",
-        "type" : "molotovflame",
-        "fuzzAngle" : 0,
-        "inheritDamageFactor" : 0.05,
-        "angleAdjust" : -55
-      },
-      {
-        "action" : "projectile",
-        "type" : "molotovflame",
-        "fuzzAngle" : 0,
-        "inheritDamageFactor" : 0.05,
-        "angleAdjust" : -1
-      },
-      {
-        "action" : "projectile",
-        "type" : "molotovflame",
-        "fuzzAngle" : 0,
-        "inheritDamageFactor" : 0.05,
-        "angleAdjust" : -65
-      },
-      {
-        "action" : "projectile",
-        "type" : "molotovflame",
-        "fuzzAngle" : 0,
-        "inheritDamageFactor" : 0.05,
-        "angleAdjust" : 65
+    "op": "replace",
+    "path": "/list/1/body/0",
+    "value": {
+      "action": "projectile",
+      "type": "molotov",
+      "fuzzAngle": 180,
+      "config": {
+        "power": 25,
+        "speed": 50,
+        "actionOnHit": [ { "action": "item", "name": "essence", "count": 25 } ],
+        "actionOnTimeout": [ { "action": "item", "name": "essence", "count": 25 } ]
       }
-    ]
+    }
   }
 ]
